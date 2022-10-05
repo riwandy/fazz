@@ -1,0 +1,17 @@
+#date-range-picker {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.date-picker {
+  height: 40px;
+}
+
+@media screen and (max-width: 580px) {
+  #date-range-picker {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}

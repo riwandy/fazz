@@ -1,0 +1,23 @@
+#pagination-nav {
+  display: flex;
+  width: fit-content;
+  justify-self: center;
+  margin: 10px 0 20px 0;
+}
+
+#page-button-active {
+  color: red;
+}
+
+.page-button {
+  width: 40px;
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  border: 0.1px solid gainsboro;
+}
+
+.page-button:hover {
+  cursor: pointer;
+  background-color: azure;
+}

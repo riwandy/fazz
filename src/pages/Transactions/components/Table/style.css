@@ -1,0 +1,76 @@
+.table {
+  margin: 0 0 40px 0;
+  width: 100%;
+  display: table;
+}
+
+.row {
+  height: 30px;
+  line-height: 30px;
+  display: table-row;
+  background: #f7f7f7;
+}
+
+.row:nth-of-type(odd) {
+  background: #ffffff;
+}
+
+.row.header {
+  font-weight: 600;
+  color: #ffffff;
+  background: #27ae60;
+}
+
+.cell {
+  padding: 6px 12px;
+  display: table-cell;
+  text-align: center;
+}
+
+.sort-btn {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.debit {
+  color: red;
+}
+
+.credit {
+  color: green;
+}
+
+@media screen and (max-width: 580px) {
+  .row {
+    width: 100%;
+    line-height: 20px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+    height: fit-content;
+  }
+
+  .row.header .cell {
+    display: none;
+  }
+
+  .row .cell {
+    display: block;
+    padding: 0;
+    
+  }
+
+  .row .cell:before {
+    margin-bottom: 3px;
+    content: attr(data-title);
+    min-width: 98px;
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #969696;
+    display: block;
+  }
+}

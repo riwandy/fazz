@@ -1,0 +1,27 @@
+#detail-box {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  padding: 20px;
+  background: rgb(238, 238, 238);
+  border-radius: 10px;
+}
+
+#title {
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#back-btn {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#debit {
+  color: red;
+}
+
+#credit {
+  color: green;
+}

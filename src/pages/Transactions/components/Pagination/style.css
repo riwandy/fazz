@@ -1,0 +1,25 @@
+#pagination {
+  display: grid;
+}
+
+#search-and-filter {
+  padding: 20px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  width: 100%;
+}
+
+#search-bar {
+  height: 40px;
+}
+
+@media screen and (max-width: 580px) {
+  #search-and-filter {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+}
